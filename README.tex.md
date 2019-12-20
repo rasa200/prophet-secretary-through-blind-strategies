@@ -33,7 +33,7 @@ g_{ m , p }( k ) = \left\{ \begin{array}{l l}
     \end{array}	 
     \right.
 $$
-Given  $1 \geq \alpha_1 \geq \ldots \geq \alpha_m > 0$, define $\alpha_{\alpha_1, \ldots, \alpha_m}: [0, 1] \to [0, 1]$  by 
+Given $1 \geq \alpha_1 \geq \ldots \geq \alpha_m > 0$, define $\alpha_{\alpha_1, \ldots, \alpha_m}: [0, 1] \to [0, 1]$ by 
 $$
 \alpha_{\alpha_1, \ldots, \alpha_m}( x )
 		= \sum\limits_{ j \in [m] } \alpha_j \mathbb{1}_{ \left[ \frac{j-1}{m}, \frac{j}{m} \right) }( x ) \,.
@@ -86,7 +86,6 @@ $$
 where $\beta_{ K, \overline{t} }$ is the solution of the following integro-differential equation
 $$
 \begin{align}
-\label{ODE}
 	\left\{ \begin{array}{l l}
 		\dot{\beta}( t ) = 
 

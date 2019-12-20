@@ -1,30 +1,6 @@
-# prophet-secretary-through-blind-strategies
+# Improved lower bound
 
-Collection of scripts that solve computational problems stated in the paper "Prophet secretary through blind strategies".
-
-
-
-**Note:** contact the author when GitHub supports math in readme files.
-
-
-
-There are three results that need the help of computations to be proven and are listed below.
-
-## Lower bound
-
-### Result
-
-There exists a nonincreasing function $\alpha: [0, 1] \to [0, 1]$ such that $\alpha(1) = 0$ and for all $x \in [0, 1]$
-$$
-\int\limits_{ 0 }^{ x } \frac{ 1 - \alpha( y )}{ 1 - \alpha( x ) } dy + \int\limits_{ x }^{ 1 } \exp\left({ \int\limits_{ 0 }^{ y } \ln \alpha(w) dw}\right) dy 
-\quad \in \quad [0.6653, 0.6720] \, .
-$$
-
-
-
-## Improved lower bound
-
-### Definitions
+## Definitions
 
 Let us define for $m \geq 1$ and $p \in (0, 1)$ the function $g_{ m , p } : [m] \to \mathbb{R}_+$ by 
 $$
@@ -42,7 +18,7 @@ $$
 		= \sum\limits_{ j \in [m] } \alpha_j \mathbb{1}_{ \left[ \frac{j-1}{m}, \frac{j}{m} \right) }( x ) \,.
 $$
 
-### Result
+## Result
 
 There exists $1 \geq \alpha_1 \geq \ldots \geq \alpha_m > 0$ such that, for every instance $F_1, \ldots, F_mN$ and $t > 0$,  
 $$
@@ -70,43 +46,7 @@ f_j( \alpha_1, \ldots, \alpha_m ) = \left\{ \begin{array}{l l}
 $$
 where $T$ is the stopping time defined by the blind strategy  $\alpha_{\alpha_1, \ldots, \alpha_m}$.
 
+## Algorithm
 
-
-## Upper bound
-
-### Definitions
-
-For $K \in [0, 3]$ and $\overline{t} \in [0, 1/3]$, define 
-$$
-\alpha_{ K, \overline{t} }( t ) = \left\{ \begin{array}{l l}
-		1
-			&; 0 \leq t < \overline{t} \\
-		\beta_{ K, \overline{t} }( t )
-			&; \overline{t} \leq t \leq 1,
-		\end{array}
-		\right.
-$$
-where $\beta_{ K, \overline{t} }$ is the solution of the following integro-differential equation
-$$
-\begin{align}
-	\left\{ \begin{array}{l l}
-		\dot{\beta}( t ) = 
-
-  - K \exp\left[ \int\limits_{ \overline{t} }^{ t } \ln \beta( s ) ds \right]
-    		& t \in ( \overline{t}, 1) \\
-    	\beta( 1 ) = 0 \,.
-    	\end{array}
-    	\right.
-    \end{align}
-$$
-
-### Result
-
-$$
-\sup\limits_{ \substack{ K \in [0, 3] \\ \overline{t} \in [0, 1/3] } } \left\{
-			1 - \int\limits_{ 0 }^{ 1 } \alpha_{ K, \overline{t} }( s ) ds , 
-			\int\limits_{ 0 }^{ 1 } e^{ \int\limits_{ 0 }^{ s } \ln \alpha_{ K, \overline{t} }( w ) dw } ds
-			\right\} 
-		\leq 0.675
-$$
-
+1. Take $m = 30$.
+2. Find $\alpha^* \in argmax\{ \min_{ j \in [m+1] } \{ f_j( \alpha_1, \ldots, \alpha_m ) \} \}$.

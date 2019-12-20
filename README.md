@@ -103,7 +103,7 @@ $$
 ### Result
 
 $$
-\sup\limits_{ \substack{ K \in [0, 3] \\ \overline{t} \in [0, 1/3] } } \left\{
+\sup\limits_{ \substack{ K \in [0, 3] \\ \overline{t} \in [0, 1/3] } } \min \left\{
 			1 - \int\limits_{ 0 }^{ 1 } \alpha_{ K, \overline{t} }( s ) ds , 
 			\int\limits_{ 0 }^{ 1 } e^{ \int\limits_{ 0 }^{ s } \ln \alpha_{ K, \overline{t} }( w ) dw } ds
 			\right\} 

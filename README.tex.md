@@ -1,4 +1,12 @@
+```
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js? 
+config=TeX-MML-AM_CHTML"
+</script>
+```
+
 # prophet-secretary-through-blind-strategies
+
 Collection of scripts that solve computational problems stated in the paper "Prophet secretary through blind strategies".
 
 
@@ -75,13 +83,13 @@ where $T$ is the stopping time defined by the blind strategy  $\alpha_{\alpha_1,
 
 For $K \in [0, 3]$ and $\overline{t} \in [0, 1/3]$, define 
 $$
-	\alpha_{ K, \overline{t} }( t ) = \left\{ \begin{array}{l l}
+\alpha_{ K, \overline{t} }( t ) = \left\{ \begin{array}{l l}
 		1
 			&; 0 \leq t < \overline{t} \\
 		\beta_{ K, \overline{t} }( t )
 			&; \overline{t} \leq t \leq 1,
 		\end{array}
-		\right.	
+		\right.
 $$
 where $\beta_{ K, \overline{t} }$ is the solution of the following integro-differential equation
 $$

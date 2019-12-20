@@ -1,4 +1,12 @@
+```
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js? 
+config=TeX-MML-AM_CHTML"
+</script>
+```
+
 # prophet-secretary-through-blind-strategies
+
 Collection of scripts that solve computational problems stated in the paper "Prophet secretary through blind strategies".
 
 
@@ -40,7 +48,7 @@ where <img src="/tex/2f118ee06d05f3c2d98361d9c30e38ce.svg?invert_in_darkmode&san
 ### Definitions
 
 For <img src="/tex/1d7c7a0cd7eae5aef882c07446983b82.svg?invert_in_darkmode&sanitize=true" align=middle width=68.10488849999999pt height=24.65753399999998pt/> and <img src="/tex/c34d96d27cacb117c260636987ad69fb.svg?invert_in_darkmode&sanitize=true" align=middle width=75.34238579999999pt height=25.481758500000016pt/>, define 
-<p align="center"><img src="/tex/93a585fe58a84411cfe1e2302b4a78c2.svg?invert_in_darkmode&sanitize=true" align=middle width=233.63073194999998pt height=39.71699655pt/></p>
+<p align="center"><img src="/tex/8ce1a90d5a2f96c6bf56c75317d383af.svg?invert_in_darkmode&sanitize=true" align=middle width=233.63073194999998pt height=39.71699655pt/></p>
 where <img src="/tex/bce4925a0410eba124e9661d4f6986ce.svg?invert_in_darkmode&sanitize=true" align=middle width=29.311791299999992pt height=22.831056599999986pt/> is the solution of the following integro-differential equation
 <p align="center"><img src="/tex/b787c83a9ddb7ecb631a791dce356d23.svg?invert_in_darkmode&sanitize=true" align=middle width=240.98160569999996pt height=67.39775625pt/></p>
 

@@ -22,7 +22,7 @@ There exists a nonincreasing function <img src="/tex/3e090f251d719efdee6b4faeedf
 
 Let us define for <img src="/tex/f72f8aa4cd0ed73fd0172584e0237b66.svg?invert_in_darkmode&sanitize=true" align=middle width=44.56994024999999pt height=21.18721440000001pt/> and <img src="/tex/22217ebdb5dcf44a578077cadb0d3499.svg?invert_in_darkmode&sanitize=true" align=middle width=64.89143924999999pt height=24.65753399999998pt/> the function <img src="/tex/4d85243f77d1c4f83a756cfa0d89f9c2.svg?invert_in_darkmode&sanitize=true" align=middle width=115.80603704999999pt height=24.65753399999998pt/> by 
 <p align="center"><img src="/tex/ffa3202728c86cfeea20f2a77bae6c27.svg?invert_in_darkmode&sanitize=true" align=middle width=242.58806384999997pt height=49.315569599999996pt/></p>
-Given  <img src="/tex/7697e3f4c0e3ac7be739a03f1c12d0ec.svg?invert_in_darkmode&sanitize=true" align=middle width=164.17945004999999pt height=21.18721440000001pt/>, define <img src="/tex/83cc48062c23e5cac899e51d8c95b251.svg?invert_in_darkmode&sanitize=true" align=middle width=170.30335904999998pt height=24.65753399999998pt/>  by 
+Given <img src="/tex/7697e3f4c0e3ac7be739a03f1c12d0ec.svg?invert_in_darkmode&sanitize=true" align=middle width=164.17945004999999pt height=21.18721440000001pt/>, define <img src="/tex/83cc48062c23e5cac899e51d8c95b251.svg?invert_in_darkmode&sanitize=true" align=middle width=170.30335904999998pt height=24.65753399999998pt/> by 
 <p align="center"><img src="/tex/e18742902ff2732cdfec746fddc929b7.svg?invert_in_darkmode&sanitize=true" align=middle width=258.47570264999996pt height=40.548151049999994pt/></p>
 
 ### Result
@@ -42,7 +42,7 @@ where <img src="/tex/2f118ee06d05f3c2d98361d9c30e38ce.svg?invert_in_darkmode&san
 For <img src="/tex/1d7c7a0cd7eae5aef882c07446983b82.svg?invert_in_darkmode&sanitize=true" align=middle width=68.10488849999999pt height=24.65753399999998pt/> and <img src="/tex/c34d96d27cacb117c260636987ad69fb.svg?invert_in_darkmode&sanitize=true" align=middle width=75.34238579999999pt height=25.481758500000016pt/>, define 
 <p align="center"><img src="/tex/93a585fe58a84411cfe1e2302b4a78c2.svg?invert_in_darkmode&sanitize=true" align=middle width=233.63073194999998pt height=39.71699655pt/></p>
 where <img src="/tex/bce4925a0410eba124e9661d4f6986ce.svg?invert_in_darkmode&sanitize=true" align=middle width=29.311791299999992pt height=22.831056599999986pt/> is the solution of the following integro-differential equation
-<p align="center"><img src="/tex/372fa2c0ada5d289e84ddfd661b13a75.svg?invert_in_darkmode&sanitize=true" align=middle width=240.98160569999996pt height=67.39775625pt/></p>
+<p align="center"><img src="/tex/b787c83a9ddb7ecb631a791dce356d23.svg?invert_in_darkmode&sanitize=true" align=middle width=240.98160569999996pt height=67.39775625pt/></p>
 
 ### Result
 

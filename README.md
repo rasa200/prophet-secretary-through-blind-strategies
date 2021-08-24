@@ -15,9 +15,14 @@ There are three results that need the help of computations to be proven and are 
 ### Result
 
 There exists a nonincreasing function $\alpha: [0, 1] \to [0, 1]$ such that $\alpha(1) = 0$ and for all $x \in [0, 1]$
+
+## Math test
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup><mfrac><mrow><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mfrac><mi>d</mi><mi>y</mi><mo>+</mo><msubsup><mo>∫</mo><mi>x</mi><mn>1</mn></msubsup><mo lspace="0em" rspace="0em">exp</mo><mrow><mo>(</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>y</mi></msubsup><mo lspace="0em" rspace="0em">ln</mo><mi>α</mi><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo><mi>d</mi><mi>w</mi></mrow><mo>)</mo></mrow><mi>d</mi><mi>y</mi><mspace width="1em"></mspace><mo>∊</mo><mspace width="1em"></mspace><mo stretchy="false">[</mo><mn>0.6653</mn><mo>,</mo><mn>0.6720</mn><mo stretchy="false">]</mo><mspace width="0.16666666666666666em"></mspace><mo>.</mo></mrow><annotation encoding="TeX">
 \int_{ 0 }^{ x } \frac{ 1 - \alpha( y )}{ 1 - \alpha( x ) } dy + \int_{ x }^{ 1 } \exp\left({ \int_{ 0 }^{ y } \ln \alpha(w) dw}\right) dy \quad \in \quad [0.6653, 0.6720] \, .
 </annotation></semantics></math>
+
+## Continuing
+
 $$
 \int\limits_{ 0 }^{ x } \frac{ 1 - \alpha( y )}{ 1 - \alpha( x ) } dy + \int\limits_{ x }^{ 1 } \exp\left({ \int\limits_{ 0 }^{ y } \ln \alpha(w) dw}\right) dy 
 \quad \in \quad [0.6653, 0.6720] \, .

@@ -30,28 +30,19 @@ g_{m, p}(k) = \begin{cases}
 	\end{cases}
 $$
 
-Given $1 \geq \alpha_1 \geq \ldots \geq \alpha_m > 0$, define $\alpha_{\alpha_1, \ldots, \alpha_m}: [0, 1] \to [0, 1]$ by 
-
-$$
-\alpha_{\alpha_1, \ldots, \alpha_m}( x )
-		= \sum_{ j \in [m] } \alpha_j \mathbb{1}_{ \left\[ \frac{j-1}{m}, \frac{j}{m} \right) }( x ) \,.
-$$
-
 ### Result
 
-There exists $1 \geq \alpha_1 \geq \ldots \geq \alpha_m > 0$ such that, for every instance $F_1, \ldots, F_mN$ and $t > 0$,  
+There exists $1 \ge \alpha_1 \ge \ldots \ge \alpha_m \ge 0$ such that
 
 $$
-\mathbb{P}( V_{\sigma_T} > t ) 
-	\geq \min_{ j \in \[m+1\] } \{ f_j( \alpha_1, \ldots, \alpha_m ) \} \cdot \mathbb{P}( \max\limits_{ i \in \[n\] } \{ V_i \} > t) \,,
+\min_{j \in [m+1]} f_j( \alpha_1, \ldots, \alpha_m ) \ge 0.66975 \,,
 $$
 
-with
-
+where, for every $j \in [m+1]$,
 $$
-f_j( \alpha_1, \ldots, \alpha_m ) = \begin{cases}
+f_j( \alpha_1, \ldots, \alpha_m ) := \begin{cases}
 		\sum\limits_{ k = 1 }^{ m } 
-			\left( \prod\limits_{ l \in \[k-1\] } \alpha_l \right)^{ \frac{1}{m} } 
+			\left( \prod\limits_{ l \in [k-1] } \alpha_l \right)^{ \frac{1}{m} } 
 			\left( \frac{ 1 - \alpha_k^{ \frac{1}{m} } }{ -\ln \alpha_k } \right)
 			&; j = 1 \\
 		\sum\limits_{ k \in [j-1] } \frac{ 1 - \alpha_k }{ m( 1 - \alpha_j ) } 
@@ -64,10 +55,6 @@ f_j( \alpha_1, \ldots, \alpha_m ) = \begin{cases}
 				&; j = m+1 \,.
     	\end{cases}
 $$
-
-where $T$ is the stopping time defined by the blind strategy  $\alpha_{\alpha_1, \ldots, \alpha_m}$.
-
-
 
 ## Upper bound
 

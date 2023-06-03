@@ -20,7 +20,7 @@ lb = eps*ones(m, 1); % We need to take the log.
 ub = ones(m, 1);
 
 % Set options
-options = optimoptions('fmincon');%,'Display','iter','MaxIter',2000);
+options = optimoptions('fmincon');
 options.Display = 'iter';
 options.MaxIter = 1000;
 options.TolFun = 1.0e-15;

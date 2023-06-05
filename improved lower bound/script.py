@@ -3,58 +3,12 @@
 # Reference API
 # https://docs.scipy.org/doc/scipy/reference/optimize.minimize-trustconstr.html
 
-m = 30
-
+from detailed_performance import detailed_performance
 import numpy as np
 from scipy.optimize import minimize
 
-# Objective function
-# DetailedPerformance is the performance garantee for pice-wise blind quantile strategies, doing the detailed analysis.
+m = 30
 
-def detailed_performance(alpha):
-
-    # Sanity checks
-    for a in alpha:
-        if a <= 0 or a >= 1:
-            return 0
-
-    # Initialize variables
-    m = len(alpha)
-    
-    #   Start computations
-    
-    # Detailed factor 
-    # g_{m,p}(k), where p = alpha_1
-    g = np.zeros(m)
-    p = alpha[0]
-    for k in range(1, m+1):
-        if k <= m/2:
-            g[k-1] = 1 / ( 1 - k/m * ( 1 - p ) )
-        else:
-            g[k-1] = 2 / ( 1 + p )
-
-    # Computing garantee
-    # f_j( \alpha_1, ..., \alpha_m )
-    
-    # Initialize
-    f = np.ones(m+1)
-    
-    # j = 1
-    f[0] = np.sum( [ np.prod(alpha[0:k-1])**(1/m) * (1 - alpha[k-1]**(1/m)) / -np.log(alpha[k-1])  for k in range(1, m + 1)])
-
-    # j = m+1
-    f[m] = np.sum( 1 - alpha ) / m ;
-
-    # j in {2, ..., m}
-    # Initial building blocks
-    Sumalpha = np.cumsum(1 - alpha) 
-    Prodalpha = np.cumprod(alpha)
-    # Define for each j
-    for j in range(2, m+1):
-        aux = [Prodalpha[k-2]**(1/m) * g[k-2] * (1 - alpha[k-1]**(1/m)) / (-np.log(alpha[k-1]))  for k in range(j, m+1)]
-        f[j-1] = Sumalpha[j-2] / ( m * (1 - alpha[j-1]) ) + np.sum( aux ) 
-
-    return f
 
 # Bounds
 # lower <= x <= upper   
@@ -174,7 +128,7 @@ print(np.min(detailed_performance(res.x)))
     #    0.23601253, 0.22021746, 0.20378073, 0.18680571, 0.16867315,
     #    0.14915083, 0.12761786, 0.10292822, 0.07331355, 0.03333235] 
     # 0.6684561705990512
-    
+
     # [0.73470981, 0.64016774, 0.5836485 , 0.54111827, 0.50779049,
     #    0.48015017, 0.45635485, 0.43530098, 0.41629283, 0.39885004,
     #    0.38262812, 0.36737409, 0.35288684, 0.33900537, 0.325594  ,
